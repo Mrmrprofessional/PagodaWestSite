@@ -1,0 +1,21 @@
+@import "normalize";
+@import "skeleton";
+@import "unslider";
+@import "unslider-dots";
+
+@mixin home-gradient {background: rgb(195,234,231);
+        background: -moz-linear-gradient(left, rgba(195,234,231,1) 1%, rgba(240,255,225,1) 15%, rgba(240,255,225,1) 85%, rgba(195,234,231,1) 98%);
+        background: -webkit-linear-gradient(left, rgba(195,234,231,1) 1%,rgba(240,255,225,1) 15%,rgba(240,255,225,1) 85%,rgba(195,234,231,1) 98%);
+        background: linear-gradient(to right, rgba(195,234,231,1) 1%,rgba(240,255,225,1) 15%,rgba(240,255,225,1) 85%,rgba(195,234,231,1) 98%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3eae7', endColorstr='#c3eae7',GradientType=1 );}
+
+
+.home{
+  height:100vh;
+  @include home-gradient;
+}
+
+
+.my-slider{
+  text-align: center;
+}
